@@ -1,0 +1,16 @@
+{
+  "name": "cryto_prices_scraper",
+  "version": "1.0.0",
+  "description": "A web scraper for crytocurrency prices that can be used as an api fro your site",
+  "main": "index.js",
+  "scripts": {
+    "app": "node app"
+  },
+  "author": "Daniel Brai",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.3"
+  }
+}
