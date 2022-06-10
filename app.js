@@ -4,7 +4,7 @@ const cheerio = require("cheerio")
 const express = require("express")
 
 const app = express();
-const port = 3000 || env.PORT
+const port = process.env.PORT || 3000 
 
 async function getPrices() {
     try {
@@ -78,5 +78,5 @@ app.get("/api/crypto-price-feed", async(req, res) => {
 } )
 
 app.listen(port, () => {
-    console.log("Server is listening on port 3000....")
+    console.log(`Server is listening on port ${port}....`)
 })
